@@ -1,8 +1,18 @@
 import '../styles/globals.css'
+import 'tailwindcss/tailwind.css'
+import Navigation from "../components/Navigation";
 import type { AppProps } from 'next/app'
 
+
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return(
+    <>
+    <Navigation/>
+    <Component {...pageProps} />
+    </>
+  )
 }
 
 export default MyApp
+
+
