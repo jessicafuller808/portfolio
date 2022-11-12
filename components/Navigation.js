@@ -1,4 +1,5 @@
 import Link from "next/link"
+import ThemeSwitch from './ThemeSwitch';
 //import React from "react"
 
 const Navigation = () => {
@@ -8,6 +9,7 @@ const Navigation = () => {
                 <Link href="/" className={"font-medium tracking-wider transition-colors text-gray-900 hover:text-sky-500 uppercase dark:text-white"}>
                         Jessica Fuller
                 </Link>
+                <ThemeSwitch/>
             </div>
         </div>
     )
